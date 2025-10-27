@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripció al Curs Online de Desenvolupament Web</title>
+</head>
+<body>
+    <header>
+        <h1>Inscripció al Curs Online de Desenvolupament Web</h1>
+        <p>Omple el formulari per apuntar-te al curs o cursos que t’interessin.</p>
+    </header>
+
+    <main>
+        <form action="" method="get">
+            <!-- Dades Personals -->
+            <fieldset>
+                <legend>Dades Personals</legend>
+
+                <label for="nom">Nom complet:</label><br>
+                <input type="text" id="nom" name="nom" required minlength="3" maxlength="60"><br><br>
+
+                <label for="email">Correu electrònic:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="telefon">Telèfon:</label><br>
+                <input type="tel" id="telefon" name="telefon" required pattern="[0-9]{9}" placeholder="Ex: 600123456"><br><br>
+
+                <label for="naixement">Data de naixement:</label><br>
+                <input type="date" id="naixement" name="naixement" required><br>
+            </fieldset>
+
+            <br>
+
+            <!-- Tipus de curs i experiència -->
+            <fieldset>
+                <legend>Tipus de Curs i Experiència prèvia</legend>
+
+                <label for="cursos">Escull els cursos que t’interessen:</label><br>
+                <select id="cursos" name="cursos" multiple size="5">
+                    <optgroup label="Programació">
+                        <option>Programació Bàsica</option>
+                        <option>Desenvolupament de Videojocs</option>
+                        <option>Desenvolupament Web</option>
+                    </optgroup>
+                    <optgroup label="Administració">
+                        <option>Administració de Sistemes</option>
+                        <option>Xarxes i Seguretat</option>
+                    </optgroup>
+                </select><br><br>
+
+                <p>Nivell d’experiència:</p>
+                <input type="radio" id="novell" name="nivell" value="novell" required>
+                <label for="novell">Novell</label><br>
+
+                <input type="radio" id="intermedi" name="nivell" value="intermedi">
+                <label for="intermedi">Intermedi</label><br>
+
+                <input type="radio" id="avançat" name="nivell" value="avançat">
+                <label for="avançat">Avançat</label>
+            </fieldset>
+
+            <br>
+
+            <!-- Interessos i motivació -->
+            <fieldset>
+                <legend>Interessos i Motivació</legend>
+
+             Inscripció al Curs Online de Desenvolupament Web
+   <p>Què t’interessa del curs?</p>
+                <input type="checkbox" id="projectes" name="interessos" value="projectes">
+                <label for="projectes">Projectes pràctics</label><br>
+
+                <input type="checkbox" id="tutories" name="interessos" value="tutories">
+                <label for="tutories">Tutories online</label><br>
+
+                <input type="checkbox" id="certificats" name="interessos" value="certificats">
+                <label for="certificats">Certificats oficials</label><br><br>
+
+                <label for="motivacio">Explica breument per què vols fer el curs:</label><br>
+                <textarea id="motivacio" name="motivacio" required minlength="20" maxlength="300" rows="4" cols="40"
+                placeholder="Escriu aquí la teva motivació..."></textarea><br><br>
+
+                <label for="feina">Tipus de lloc de treball que t’interessa:</label><br>
+                <input list="feines" id="feina" name="feina" placeholder="Ex: Backend">
+                <datalist id="feines">
+                    <option value="Ciberseguretat">
+                    <option value="DevOps">
+                    <option value="Frontend">
+                    <option value="Backend">
+                    <option value="Disseny UX/UI">
+                </datalist>
+            </fieldset>
+
+            <br>
+
+            <!-- Fitxer i condicions -->
+            <fieldset>
+                <legend>Fitxer i Acceptació de Condicions</legend>
+
+                <label for="cv">Adjunta el teu CV (PDF):</label><br>
+                <input type="file" id="cv" name="cv" accept=".pdf"><br><br>
+
+                <input type="checkbox" id="condicions" name="condicions" required>
+                <label for="condicions">Accepto les condicions per realitzar el curs</label>
+            </fieldset>
+
+            <br>
+
+            <button type="submit">Enviar Inscripció</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Curs Online de Desenvolupament Web</p>
+        <p>Contacte: <a href="mailto:info@cursosweb.cat">info@cursosweb.cat</a> | 
+           <a href="#">Suport tècnic</a></p>
+    </footer>
+</body>
+</html>
